@@ -21,5 +21,55 @@
             "117 Normal Street,",
             "118 Normal Street,"
         ]
+    },
+    
+    "menu" : {
+        "categories": [
+        
+            {
+                "id": "1",
+                "name": "Pizza"
+            },
+            {
+                "id": "2",
+                "name": "Drinks"
+            },
+            {
+                "id": "3",
+                "name": "Sides"
+            },
+            {
+                "id": "4",
+                "name": "Desserts"
+            },
+            {
+                "id": "5",
+                "name": "Misc"
+            }
+        ],
+        
+        "items": {
+            "1": [
+                {
+                    "id": "1",
+                    "name": "Create your own pizza"
+                },
+                {
+                    "id": "2",
+                    "name": "Great Pizza"
+                }
+            ],
+            
+            "2": [
+                {
+                    "id": "1",
+                    "name": "Create your own pizza"
+                },
+                {
+                    "id": "2",
+                    "name": "Great Pizza"
+                }
+            ]
+        }
     }
 }
