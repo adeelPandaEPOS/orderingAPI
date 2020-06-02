@@ -1,5 +1,5 @@
 {
-    // Account
+    "user": {
         
         "addresses": [
             "100 Normal Street,",
@@ -22,4 +22,5 @@
             "117 Normal Street,",
             "118 Normal Street,",
         ]
+    }
 }
