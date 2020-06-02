@@ -14,7 +14,22 @@ server.use((req, res, next) => {
     var originalSend = res.send;
 
     res.send = function(){
-        var response = {status:0, message:"Success", data: JSON.parse(arguments[0])}
+        var status = 0;
+        var message = "Success";
+
+        var body = JSON.parse(arguments[0]);
+        if (Array.isArray (body)) {
+            if (body.length == 0) {
+                status = 1;
+                message = "No items found!";
+            }
+        } else {
+            if (Object.keys(body).length === 0) {
+                status = 1;
+                message = "Item not found!";
+            }
+        }
+        var response = {status: status, message: message, data: body}
         arguments[0] = JSON.stringify(response)
         
         originalSend.apply(res, arguments);

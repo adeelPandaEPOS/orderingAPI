@@ -1,1 +1,47 @@
-{}
+{
+    "stores": [
+        {
+            "id": "1",
+            "name": "Sample store 1",
+            "address": "12 Sample street, sample road, sample town",
+            "postcode": "N11 1NY",
+            "phone": "01209902334",
+            "timing": [
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00"
+            ],
+            "distance": 12,
+            "delivery": true,
+            "collection": true,
+            "latitude": 0,
+            "longitude": 0
+        },
+        {
+            "id": "2",
+            "name": "Sample store 2",
+            "address": "32 Sample street, sample road, sample town",
+            "postcode": "N11 1AA",
+            "phone": "02839898983",
+            "timing": [
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00"
+            ],
+            "distance": 13,
+            "delivery": true,
+            "collection": true,
+            "latitude": 0,
+            "longitude": 0
+        }
+    ]
+
+}
