@@ -47,6 +47,11 @@ server.get('/echo', (req, res) => {
     res.jsonp(req.query)
 })
 
+// avoid post data effecting the json data
+server.post('*', function(req,res,next) {
+     res.redirect (req.path);
+})
+
 // Routes for different sections
 server.use('/users', jsonServer.router('users.json'))
 server.use('/menu', jsonServer.router('menu.json'))
