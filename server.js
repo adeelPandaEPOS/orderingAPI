@@ -1,4 +1,6 @@
 var jsonServer = require('json-server')
+var path = require('path')
+var express = require('express')
 
 // create express server
 var server = jsonServer.create()
@@ -8,6 +10,8 @@ var router = jsonServer.router('db.json')
 
 // set default middlewares like logger
 server.use(jsonServer.defaults())
+
+server.use('/static', express.static(path.join(__dirname, 'public')));
 
 // wrap the json reponse inside a standard object (status, message, data)
 server.use((req, res, next) => {

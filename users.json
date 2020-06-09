@@ -21,12 +21,12 @@
     "118 Normal Street,"
   ],
   "login": {
-    "token": "Ayza0292csndnw9hd9d1e0d8hsj280",
+    "id": "1321",
     "first_name": "Adeel",
     "last_name": "Adeel",
     "email": "adeeltariq@pandaepos.com",
     "phone": "030929889389",
-    "addresses":[
+    "addresses": [
         {
             "postcode": "N11 1NY",
             "address": "28 sample street, sample road, sample town",
@@ -34,10 +34,53 @@
             "driver_intructions": "Please use the bell"
         },
         {
-            "postcode": "N11 1AY",
+            "postcode": "N11 1AA",
             "address": "48 sample street, sample road, sample town",
             "default": false
         }
     ]
-}
+    },
+    "signup": {
+        "id": "1321",
+        "first_name": "Adeel",
+        "last_name": "Adeel",
+        "email": "adeeltariq@pandaepos.com",
+        "phone": "030929889389",
+        "addresses": [
+            {
+                "postcode": "N11 1NY",
+                "address": "28 sample street, sample road, sample town",
+                "default": true,
+                "driver_intructions": "Please use the bell"
+            },
+            {
+                "postcode": "N11 1AA",
+                "address": "48 sample street, sample road, sample town",
+                "default": false
+            }
+        ]
+    },
+
+    "profile": {
+        "id": "1321",
+        "first_name": "Adeel",
+        "last_name": "Tariq",
+        "email": "adeeltariq@pandaepos.com",
+        "phone": "030929889389",
+        "addresses": [
+            {
+                "postcode": "N11 1NY",
+                "address": "28 sample street, sample road, sample town",
+                "default": true,
+                "driver_intructions": "Please use the bell"
+            },
+            {
+                "postcode": "N11 1AA",
+                "address": "48 sample street, sample road, sample town",
+                "default": false
+            }
+        ]
+    },
+
+    "password_reset": {"empty": "empty"}
 }
