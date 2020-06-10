@@ -3,23 +3,28 @@
     
         {
             "id": "1",
-            "name": "Pizza"
+            "name": "Pizza",
+            "image": "http://localhost:8080/static/pizza.png"
         },
         {
             "id": "2",
-            "name": "Drinks"
+            "name": "Drinks",
+            "image": "http://localhost:8080/static/drinks.jpg"
         },
         {
             "id": "3",
-            "name": "Sides"
+            "name": "Sides",
+            "image": "http://localhost:8080/static/sides.jpg"
         },
         {
             "id": "4",
-            "name": "Desserts"
+            "name": "Desserts",
+            "image": "http://localhost:8080/static/desserts.jpg"
         },
         {
             "id": "5",
-            "name": "Misc"
+            "name": "Misc",
+            "image": "http://localhost:8080/static/food.jpg"
         }
     ],
     
