@@ -18,18 +18,18 @@ server.use((req, res, next) => {
     var originalSend = res.send;
 
     res.send = function(){
-        var status = 0;
+        var status = 1;
         var message = "Success";
 
         var body = JSON.parse(arguments[0]);
         if (Array.isArray (body)) {
             if (body.length == 0) {
-                status = 1;
+                status = 3;
                 message = "No items found!";
             }
         } else {
             if (Object.keys(body).length === 0) {
-                status = 1;
+                status = 3;
                 message = "Item not found!";
             }
         }
@@ -43,7 +43,7 @@ server.use((req, res, next) => {
 
 // add one second delay
 server.use((req, res, next) => {
-    setTimeout(() => next(), 1000)
+    setTimeout(() => next(), 2000)
 })
 
 // echo route to check if server is running
