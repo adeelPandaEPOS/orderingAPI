@@ -1,27 +1,6 @@
 {
-  "addresses": [
-    "100 Normal Street,",
-    "101 Normal Street,",
-    "102 Normal Street,",
-    "103 Normal Street,",
-    "104 Normal Street,",
-    "105 Normal Street,",
-    "106 Normal Street,",
-    "107 Normal Street,",
-    "108 Normal Street,",
-    "109 Normal Street,",
-    "110 Normal Street,",
-    "111 Normal Street,",
-    "112 Normal Street,",
-    "113 Normal Street,",
-    "114 Normal Street,",
-    "115 Normal Street,",
-    "116 Normal Street,",
-    "117 Normal Street,",
-    "118 Normal Street,"
-  ],
   "login": {
-    "id": "1321",
+    "user_id": 1321,
     "first_name": "Adeel",
     "last_name": "Adeel",
     "email": "adeeltariq@pandaepos.com",
@@ -30,18 +9,19 @@
         {
             "postcode": "N11 1NY",
             "address": "28 sample street, sample road, sample town",
-            "default": true,
-            "driver_intructions": "Please use the bell"
+            "default_address": true,
+            "driver_intruction": "Please use the bell"
         },
         {
             "postcode": "N11 1AA",
             "address": "48 sample street, sample road, sample town",
-            "default": false
+            "default_address": false
         }
     ]
     },
+
     "signup": {
-        "id": "1321",
+        "user_id": 1321,
         "first_name": "Adeel",
         "last_name": "Adeel",
         "email": "adeeltariq@pandaepos.com",
@@ -50,19 +30,19 @@
             {
                 "postcode": "N11 1NY",
                 "address": "28 sample street, sample road, sample town",
-                "default": true,
-                "driver_intructions": "Please use the bell"
+                "default_address": true,
+                "driver_intruction": "Please use the bell"
             },
             {
                 "postcode": "N11 1AA",
                 "address": "48 sample street, sample road, sample town",
-                "default": false
+                "default_address": false
             }
         ]
     },
 
     "profile": {
-        "id": "1321",
+        "user_id": 1321,
         "first_name": "Adeel",
         "last_name": "Tariq",
         "email": "adeeltariq@pandaepos.com",
@@ -71,16 +51,863 @@
             {
                 "postcode": "N11 1NY",
                 "address": "38 sample street, sample road, sample town",
-                "default": true,
-                "driver_intructions": "Please use the bell"
+                "default_address": true,
+                "driver_intruction": "Please use the bell"
             },
             {
                 "postcode": "N11 1AA",
                 "address": "48 normal street, sample road, sample town",
-                "default": false
+                "default_address": false
             }
         ]
     },
 
-    "password_reset": {"empty": "empty"}
+    "password_reset": {"empty": "empty"},
+
+    "drestrant": {
+        "id": 1,
+        "name": "Sample store 1",
+        "address": "12 Sample street, sample road, sample town",
+        "postcode": "N11 1NY",
+        "map_image": "http://localhost:8080/static/store.png",
+        "phone": "01209902334",
+        "timing": [
+            "8:00 to 20:00",
+            "8:00 to 20:00",
+            "8:00 to 20:00",
+            "8:00 to 20:00",
+            "8:00 to 20:00",
+            "8:00 to 20:00",
+            "8:00 to 20:00"
+        ],
+        "distance": 12,
+        "delivery": true,
+        "collection": true,
+        "is_open": false,
+        "latitude": 51.6186689,
+        "longitude": -0.1369317
+    },
+
+    "collectionRestrant": [
+        {
+            "id": 2,
+            "name": "Sample store 2",
+            "address": "32 Sample street, sample road, sample town",
+            "postcode": "N11 1AA",
+            "map_image": "http://localhost:8080/static/store.png",
+            "phone": "0283548983",
+            "timing": [
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00"
+            ],
+            "distance": 13,
+            "delivery": true,
+            "collection": true,
+            "is_open": true,
+            "latitude": 51.6186689,
+            "longitude": -0.1369317
+        },
+        {
+            "id": 3,
+            "name": "Sample store 3",
+            "address": "36 Sample street, sample road, sample town",
+            "postcode": "N11 1NA",
+            "map_image": "http://localhost:8080/static/store.png",
+            "phone": "01209909474",
+            "timing": [
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00"
+            ],
+            "distance": 12,
+            "delivery": true,
+            "collection": false,
+            "is_open": true,
+            "latitude": 51.6181693,
+            "longitude": -0.1426609
+        },
+        {
+            "id": 4,
+            "name": "Sample store 4",
+            "address": "48 Sample street, sample road, sample town",
+            "postcode": "N11 1AY",
+            "map_image": "http://localhost:8080/static/store.png",
+            "phone": "01274202334",
+            "timing": [
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00"
+            ],
+            "distance": 12,
+            "delivery": true,
+            "collection": false,
+            "is_open": true,
+            "latitude": 51.6142122,
+            "longitude": -0.1449461
+        },
+        {
+            "id": 5,
+            "name": "Sample store 5",
+            "address": "60 Sample street, sample road, sample town",
+            "postcode": "N11 1YY",
+            "map_image": "http://localhost:8080/static/store.png",
+            "phone": "012098434",
+            "timing": [
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00",
+                "8:00 to 20:00"
+            ],
+            "distance": 12,
+            "delivery": false,
+            "collection": true,
+            "is_open": false,
+            "latitude": 51.6104346,
+            "longitude": -0.1387127
+        }
+    ],
+    
+    "restaurantCategoryProduct": [
+        {
+            "id": "11",
+            "name": "Create your own pizza",
+            "category_id": "1",
+            "description": "Create your own pizza",
+            "image": "http://localhost:8080/static/pizza.png",
+            "variation_title": "Size",
+            "variations":[
+                {
+                   "id":"103",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Personal",
+                   "price":8.99,
+                   "is_default":false
+                },
+                {
+                   "id":"105",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Small",
+                   "price":12.99,
+                   "is_default":false
+                },
+                {
+                   "id":"107",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Medium",
+                   "price":16.99,
+                   "is_default":false
+                },
+                {
+                   "id":"109",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Large",
+                   "price":20.99,
+                   "is_default":true
+                }
+             ],
+            "options": [
+                {
+                    "id": "201",
+                    "name": "Crust",
+                    "values":[
+                        {
+                            "id": "301",
+                            "name": "Classic crust",
+                            "price": 0,
+                            "quantity":1,
+                            "image":"http://localhost:8080/static/food.jpg",
+                            "description": "A very small text as description. A very small text as description"
+                        }
+                    ]
+                },
+                {
+                    "id": "202",
+                    "name": "Toppings",
+                    "values":[
+                        {
+                            "id": "401",
+                            "name": "Tomato Sauce",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        },
+                        {
+                            "id": "403",
+                            "name": "Cheese",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        }
+                    ]
+                },
+                {
+                    "id": "203",
+                    "name": "Toppings 2",
+                    "values":[
+                        {
+                            "id": "401",
+                            "name": "Tomato Sauce",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        }
+                    ]
+                }
+            ],
+            "is_template": true
+        },
+        {
+            "id": "12",
+            "name": "Great Pizza",
+            "category_id": "1",
+            "description": "Bite sized pieces of chicken breast, in a slightly season crispy coating. Served with a BBQ di[. Serves 2 - 242kcal/serving",
+            "image": "http://localhost:8080/static/pizza.png",
+            "variation_title": "Size",
+            "variations":[
+                {
+                   "id":"103",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Personal",
+                   "price":8.99,
+                   "is_default":false
+                },
+                {
+                   "id":"105",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Small",
+                   "price":12.99,
+                   "is_default":false
+                },
+                {
+                   "id":"107",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Medium",
+                   "price":16.99,
+                   "is_default":false
+                },
+                {
+                   "id":"109",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Large",
+                   "price":20.99,
+                   "is_default":true
+                }
+             ],
+            "options":[
+                {
+                    "id": "201",
+                    "name": "Crust",
+                    "values":[
+                        {
+                            "id": "302",
+                            "name": "Italian crust",
+                            "price": 0,
+                            "quantity":1,
+                            "image":"http://localhost:8080/static/food.jpg",
+                            "description": "A very small text as description. A very small text as description"
+                        }
+                    ]
+                },
+                {
+                    "id": "202",
+                    "name": "Toppings",
+                    "values":[
+                        {
+                            "id": "401",
+                            "name": "Tomato Sauce",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        },
+                        {
+                            "id": "403",
+                            "name": "Cheese",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        },
+                        {
+                            "id": "404",
+                            "name": "Mushrooms",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        },
+                        {
+                            "id": "405",
+                            "name": "Pepperoni",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        }
+                    ]
+                },
+                {
+                    "id": "203",
+                    "name": "Toppings 2",
+                    "values":[
+                        {
+                            "id": "401",
+                            "name": "Tomato Sauce",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "name": "Great Pizza 2",
+            "category_id": "1",
+            "description": "Bite sized pieces of chicken breast, in a slightly season crispy coating. Served with a BBQ di[. Serves 2 - 242kcal/serving",
+            "image": "http://localhost:8080/static/pizza.png",
+            "variation_title": "Size",
+            "variations":[
+                {
+                   "id":"103",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Personal",
+                   "price":8.99,
+                   "is_default":false
+                },
+                {
+                   "id":"105",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Small",
+                   "price":12.99,
+                   "is_default":false
+                },
+                {
+                   "id":"107",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Medium",
+                   "price":16.99,
+                   "is_default":false
+                },
+                {
+                   "id":"109",
+                   "has_allergen_info":false,
+                   "image":"",
+                   "name":"Large",
+                   "price":20.99,
+                   "is_default":true
+                }
+             ],
+            "options":[
+                {
+                    "id": "201",
+                    "name": "Crust",
+                    "values":[
+                        {
+                            "id": "302",
+                            "name": "Italian crust",
+                            "price": 0,
+                            "quantity":1,
+                            "image":"http://localhost:8080/static/food.jpg",
+                            "description": "A very small text as description. A very small text as description"
+                        }
+                    ]
+                },
+                {
+                    "id": "202",
+                    "name": "Toppings",
+                    "values":[
+                        {
+                            "id": "401",
+                            "name": "Tomato Sauce",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        },
+                        {
+                            "id": "403",
+                            "name": "Cheese",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        },
+                        {
+                            "id": "404",
+                            "name": "Mushrooms",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        },
+                        {
+                            "id": "405",
+                            "name": "Pepperoni",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        }
+                    ]
+                },
+                {
+                    "id": "203",
+                    "name": "Toppings 2",
+                    "values":[
+                        {
+                            "id": "401",
+                            "name": "Tomato Sauce",
+                            "price": 1,
+                            "quantity": 1,
+                            "image":"http://localhost:8080/static/food.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "name": "Fanta",
+            "category_id": "2",
+            "image":"http://localhost:8080/static/drinks.jpg",
+            "variation_title":"Size",
+            "variations":[
+                {
+                    "id":"111",
+                    "name": "330ml",
+                    "image":"",
+                    "price": 0.89
+                },
+                {
+                    "id":"113",
+                    "name": "500ml",
+                    "image":"",
+                    "price": 1.49
+                },
+                {
+                    "id":"115",
+                    "name": "1.25l",
+                    "image":"",
+                    "price": 2.49
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "name": "Coke",
+            "category_id": "2",
+            "image":"http://localhost:8080/static/drinks.jpg",
+            "variation_title":"Size",
+            "variations":[
+                {
+                    "id":"111",
+                    "name": "330ml",
+                    "image":"",
+                    "price": 0.89
+                },
+                {
+                    "id":"113",
+                    "name": "500ml",
+                    "image":"",
+                    "price": 1.49
+                },
+                {
+                    "id":"115",
+                    "name": "1.25l",
+                    "image":"",
+                    "price": 2.49
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "name": "Dips",
+            "category_id": "3",
+            "description":"A very small text as description. A very small text as description",
+            "image":"http://localhost:8080/static/sides.jpg",
+            "variation_title": "Flavor",
+            "variations":[
+                {
+                    "id": "121",
+                    "name": "Honey & Mustard",
+                    "image":"",
+                    "price": 0.49,
+                    "has_allergen_info": true
+                },
+                {
+                    "id": "123",
+                    "name": "Sweet Chili",
+                    "image":"",
+                    "price": 0.49,
+                    "has_allergen_info": true
+                },
+                {
+                    "id": "125",
+                    "name": "Garlic & Herb",
+                    "image":"",
+                    "price": 0.49,
+                    "has_allergen_info": true
+                },
+                {
+                    "id": "127",
+                    "name": "Barbecue",
+                    "image":"",
+                    "price": 0.49,
+                    "has_allergen_info": true
+                }
+            ]
+        },
+        {
+            "id": "17",
+            "name":"Chicken wings",
+            "category_id": "3",
+            "price": 17.99,
+            "description":"A very small text as description. A very small text as description",
+            "image":"http://localhost:8080/static/sides.jpg",
+            "spicy": true
+        },
+        {
+            "id": "18",
+            "category_id": "4",
+            "name": "Ice Cream",
+            "price": 18.99,
+            "gluten_free": true,
+            "image": "http://localhost:8080/static/desserts.jpg"
+        },
+        {
+            "id": "19",
+            "category_id": "4",
+            "name": "Cookies",
+            "price": 18.99,
+            "gluten_free": true,
+            "image": "http://localhost:8080/static/desserts.jpg"
+        },
+        {
+            "id": "21",
+            "category_id": "5",
+            "name": "Garlic pizza bread",
+            "image": "http://localhost:8080/static/food.jpg",
+            "price": 18.99
+        },
+        {
+            "id": "22",
+            "category_id": "5",
+            "name": "Potato Wedges",
+            "image": "http://localhost:8080/static/food.jpg",
+            "price": 18.99
+        }
+    ],
+    
+    "restaurantProductVariationOptions": {
+        "variations":[
+           {
+              "id":"103",
+              "has_allergen_info":false,
+              "image":"http://localhost:8080/static/pizza.png",
+              "name":"Personal",
+              "price":8.99,
+              "is_default":false
+           },
+           {
+              "id":"105",
+              "has_allergen_info":false,
+              "image":"http://localhost:8080/static/pizza.png",
+              "name":"Small",
+              "price":12.99,
+              "is_default":false
+           },
+           {
+              "id":"107",
+              "has_allergen_info":false,
+              "image":"http://localhost:8080/static/pizza.png",
+              "name":"Medium",
+              "price":16.99,
+              "is_default":false
+           },
+           {
+              "id":"109",
+              "has_allergen_info":false,
+              "image":"http://localhost:8080/static/pizza.png",
+              "name":"Large",
+              "price":20.99,
+              "is_default":false
+           }
+        ],
+        "options":[
+           {
+            "value_selection":{
+                "limit":1
+             },
+             "id":"201",
+              "name":"crust",
+              "values":[
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"301",
+                    "price":0,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"A very small text as description. A very small text as description. A very small text as description A very small text as description",
+                    "name":"Classic crust"
+                 },
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"302",
+                    "price":0,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"A very small text as description. A very small text as description",
+                    "name":"Italian Style"
+                 },
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"303",
+                    "price":5,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"A very small text as description. A very small text as description",
+                    "name":"Thin & Crispy"
+                 }
+              ]
+           },
+           {
+              "id":"202",
+              "sub_options":[
+                 {
+                    "value_selection":{
+                       "limit":0,
+                       "minimum": 0,
+                       "nand":true
+                    },
+                    "id":"4",
+                    "name":"Sauce",
+                    "values":[
+                       {
+                          "spicy":true,
+                          "quantity":0,
+                          "gluten_free":true,
+                          "id":"401",
+                          "price":1,
+                          "vegetarian":false,
+                          "image":"http://localhost:8080/static/pizza.png",
+                          "description":"",
+                          "name":"Tomato Sauce"
+                       },
+                       {
+                          "spicy":true,
+                          "quantity":0,
+                          "gluten_free":true,
+                          "id":"402",
+                          "price":1,
+                          "vegetarian":false,
+                          "image":"http://localhost:8080/static/pizza.png",
+                          "description":"",
+                          "name":"BBQ Sauce"
+                       }
+                    ]
+                 },
+                 {
+                    "id":"5",
+                    "name":"Cheese",
+                    "values":[
+                       {
+                          "spicy":true,
+                          "quantity":0,
+                          "gluten_free":true,
+                          "id":"403",
+                          "price":1,
+                          "vegetarian":false,
+                          "image":"http://localhost:8080/static/pizza.png",
+                          "name":"Cheese"
+                       }
+                    ]
+                 },
+                 {
+                    "value_selection":{
+                       "limit":5
+                    },
+                    "id":"6",
+                    "name":"Toppings",
+                    "values":[
+                       {
+                          "spicy":true,
+                          "quantity":0,
+                          "gluten_free":true,
+                          "id":"404",
+                          "price":1,
+                          "vegetarian":false,
+                          "image":"http://localhost:8080/static/pizza.png",
+                          "description":"",
+                          "name":"Mushrooms"
+                       },
+                       {
+                          "spicy":true,
+                          "quantity":0,
+                          "gluten_free":true,
+                          "id":"405",
+                          "price":1,
+                          "vegetarian":false,
+                          "image":"http://localhost:8080/static/pizza.png",
+                          "description":"",
+                          "name":"Pepperoni"
+                       },
+                       {
+                          "spicy":true,
+                          "quantity":0,
+                          "gluten_free":true,
+                          "id":"406",
+                          "price":1,
+                          "vegetarian":false,
+                          "image":"http://localhost:8080/static/pizza.png",
+                          "description":"",
+                          "name":"Beef"
+                       },
+                       {
+                          "spicy":true,
+                          "quantity":0,
+                          "gluten_free":true,
+                          "id":"407",
+                          "price":1,
+                          "vegetarian":false,
+                          "image":"http://localhost:8080/static/pizza.png",
+                          "description":"",
+                          "name":"Chicken"
+                       },
+                       {
+                          "spicy":true,
+                          "quantity":0,
+                          "gluten_free":true,
+                          "id":"408",
+                          "price":1,
+                          "vegetarian":false,
+                          "image":"http://localhost:8080/static/pizza.png",
+                          "description":"",
+                          "name":"Sweetcorn"
+                       }
+                    ]
+                 }
+              ],
+              "name":"toppings",
+              "sub_options_selection":{
+                 "or":[
+                    "4",
+                    "5"
+                 ]
+              }
+           },
+           {
+              "value_selection":{
+                 "limit":5,
+                 "minimum":1
+              },
+              "id":"203",
+              "name":"Toppings 2",
+              "values":[
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"401",
+                    "price":1,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"",
+                    "name":"Tomato Sauce"
+                 },
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"402",
+                    "price":1,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"",
+                    "name":"BBQ Sauce"
+                 },
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"403",
+                    "price":1,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "name":"Cheese"
+                 },
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"404",
+                    "price":1,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"",
+                    "name":"Mushrooms"
+                 },
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"405",
+                    "price":1,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"",
+                    "name":"Pepperoni"
+                 },
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"406",
+                    "price":1,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"",
+                    "name":"Beef"
+                 },
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"407",
+                    "price":1,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"",
+                    "name":"Chicken"
+                 },
+                 {
+                    "spicy":true,
+                    "gluten_free":true,
+                    "id":"408",
+                    "price":1,
+                    "vegetarian":false,
+                    "image":"http://localhost:8080/static/pizza.png",
+                    "description":"",
+                    "name":"Sweetcorn"
+                 }
+              ]
+           }
+        ]
+     }
 }

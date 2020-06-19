@@ -1,7 +1,15 @@
 {
-    "stores": [
-        {
-            "id": "1",
+    "app_settings": {
+        "text_color": "#25282d",
+        "background_color": "#f1f1f1",
+        "accent_color": "#7006dd",
+        "corner_radius": 8,
+        "background_image": "http://localhost:8080/static/background1.jpg"
+    },
+
+    "collectionRestrant": {
+        "local_store": {
+            "id": 1,
             "name": "Sample store 1",
             "address": "12 Sample street, sample road, sample town",
             "postcode": "N11 1NY",
@@ -17,156 +25,12 @@
                 "8:00 to 20:00"
             ],
             "distance": 12,
-            "delivery": true,
-            "collection": true,
-            "is_open": false,
-            "latitude": 51.6186689,
-            "longitude": -0.1369317
-        },
-        {
-            "id": "2",
-            "name": "Sample store 2",
-            "address": "32 Sample street, sample road, sample town",
-            "postcode": "N11 1AA",
-            "map_image": "http://localhost:8080/static/store.png",
-            "phone": "02839898983",
-            "timing": [
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00"
-            ],
-            "distance": 13,
             "delivery": true,
             "collection": true,
             "is_open": true,
             "latitude": 51.6160509,
             "longitude": -0.1367493
         }
-    ],
-
-    "nearby_stores": {
-        "local_store": {
-            "id": "1",
-            "name": "Sample store 1",
-            "address": "12 Sample street, sample road, sample town",
-            "postcode": "N11 1NY",
-            "map_image": "http://localhost:8080/static/store.png",
-            "phone": "01209902334",
-            "timing": [
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00",
-                "8:00 to 20:00"
-            ],
-            "distance": 12,
-            "delivery": true,
-            "collection": true,
-            "is_open": true,
-            "latitude": 51.6160509,
-            "longitude": -0.1367493
-        },
-    
-        "nearby_stores": [
-            {
-                "id": "2",
-                "name": "Sample store 2",
-                "address": "32 Sample street, sample road, sample town",
-                "postcode": "N11 1AA",
-                "map_image": "http://localhost:8080/static/store.png",
-                "phone": "0283548983",
-                "timing": [
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00"
-                ],
-                "distance": 13,
-                "delivery": true,
-                "collection": true,
-                "is_open": true,
-                "latitude": 51.6186689,
-                "longitude": -0.1369317
-            },
-            {
-                "id": "3",
-                "name": "Sample store 3",
-                "address": "36 Sample street, sample road, sample town",
-                "postcode": "N11 1NA",
-                "map_image": "http://localhost:8080/static/store.png",
-                "phone": "01209909474",
-                "timing": [
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00"
-                ],
-                "distance": 12,
-                "delivery": true,
-                "collection": false,
-                "is_open": true,
-                "latitude": 51.6181693,
-                "longitude": -0.1426609
-            },
-            {
-                "id": "4",
-                "name": "Sample store 4",
-                "address": "48 Sample street, sample road, sample town",
-                "postcode": "N11 1AY",
-                "map_image": "http://localhost:8080/static/store.png",
-                "phone": "01274202334",
-                "timing": [
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00"
-                ],
-                "distance": 12,
-                "delivery": true,
-                "collection": false,
-                "is_open": true,
-                "latitude": 51.6142122,
-                "longitude": -0.1449461
-            },
-            {
-                "id": "5",
-                "name": "Sample store 5",
-                "address": "60 Sample street, sample road, sample town",
-                "postcode": "N11 1YY",
-                "map_image": "http://localhost:8080/static/store.png",
-                "phone": "012098434",
-                "timing": [
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00",
-                    "8:00 to 20:00"
-                ],
-                "distance": 12,
-                "delivery": false,
-                "collection": true,
-                "is_open": false,
-                "latitude": 51.6104346,
-                "longitude": -0.1387127
-            }
-        ]
     }
 
 }
